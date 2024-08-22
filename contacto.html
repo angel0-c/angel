@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/estilo.css">
+</head>
+<body>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3f3f3;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            background-image: url("static/cero/pixel.png");
+            background-repeat: no-repeat;
+            background-size: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        input[type="text"],
+        input[type="correo"],
+        input[type="asunto"],
+        select {
+            width: 100%;
+            margin-bottom: 15px;
+            padding: 10px;
+            box-sizing: border-box;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        button[type="submit"] {
+            padding: 15px;
+            border-radius: 10px;
+            border: none;
+            background-color: #3F0359;
+            color: white;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+        }
+        </style>
+    <nav class="s3">
+        <a href="http://127.0.0.1:5000/index">Portafolio</a>
+        <a href="http://127.0.0.1:5000/portaforio">bibliografia</a>
+        <a href="http://127.0.0.1:5000/contacto">Contacto</a>
+        <a href="https://www.facebook.com/angelo.colina.963">
+          <img src="static/cero/8.jpg" style="width: 27px; height: 27px; object-fit: cover;">
+      </a>
+      <a href="https://www.instagram.com/angelitodt00?igsh=MWM2azJtdHd4YWYzeA==">
+          <img src="static/cero/7.jpg" style="width: 27px; height: 27px; object-fit: cover;">
+      </a>
+       </nav>
+       <center>
+       <div class="main">
+        <h2>Registro</h2>
+        <form action="">
+            <label for="nombre">nombre:</label>
+            <input type="text" id="nombre" name="nombre" required />
+
+            <label for="apellido">apellido:</label>
+            <input type="text" id="apellido" name="apellido" required />
+
+            <label for="correo">correo:</label>
+            <input type="correo" id="correo" name="correo" required />
+
+            <label for="asunto">asunto:</label>
+            <input type="asunto" id="asunto" name="asunto" required />
+
+            <label for="contacto">contacto:</label>
+            <input type="text" id="Contacto" name="Contacto" maxlength="10" required />
+
+            <label for="genero">genero:</label>
+            <select id="genero" name="gender" required>
+                <option value="hombre">
+                    hombre
+                </option>
+                <option value="mujer">
+                    mujer
+                </option>
+                <option value="otro">
+                    otro
+                </option>
+            </select>
+
+                <button class="custom-btn btn-2">
+                <a href="http://127.0.0.1:5000/mensaje">Enviar</a><i class="fa-solid fa-paper-plane"></i>
+                <span class="overlay"></span>
+                </button>
+        </form>
+    </div>
+</body>
+
+</html>
+       
+</body>
+</html>
